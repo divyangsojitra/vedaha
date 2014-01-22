@@ -1,0 +1,273 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Patel Fashion</title>
+    <link rel="stylesheet" type="text/css" href="Adminstyle.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="niceforms-default.css" />
+
+<%--<script type="text/javascript" src="clockp.js"></script>
+--%><script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="ddaccordion.js"></script>
+<script type="text/javascript">
+ddaccordion.init({
+	headerclass: "submenuheader", //Shared CSS class name of headers group
+	contentclass: "submenu", //Shared CSS class name of contents group
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+	defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["", ""], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["suffix", "<img src='images/plus.gif' class='statusicon' />", "<img src='images/minus.gif' class='statusicon' />"], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+</script>
+
+<script type="text/javascript" src="jconfirmaction.jquery.js"></script>
+<%--<script type="text/javascript">
+	
+	$(document).ready(function() {
+		$('.ask').jConfirmAction();
+	});
+	
+</script>--%>
+
+<script language="javascript" type="text/javascript" src="niceforms.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="niceforms-default.css" />
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>	
+	<script src="js/jquery.jcarousel.pack.js" type="text/javascript"></script>	
+	<script src="js/jquery-func.js" type="text/javascript"></script>
+    </head>
+<body>
+    <form id="form1" runat="server">
+    <div class="shell" 
+        style="background-color: #FFFFFF; height: 3788px; width: 921px; margin-right: 0px;">
+    <!-- Search -->
+			
+	<div id="header" 
+            style="background-color: #FFFFFF; top: -17px; left: -1px; height: 78px;">
+	
+		<h1 id="logo"><a href="shoppingbag.aspx">shoparound</a></h1>
+		
+		<div id="cart" 
+            style="color: #000000; height: 64px; right: 209px; width: 374px; margin-left: 101;">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="Userhomepage.aspx" class="cart-link">My Account|WishList(0)</a><div class="cl"></div>
+			<span>Customer Service : +919898600876 
+			</span>	
+			<span>From 10:30am to 7:30pm (Mon-Sat)</span>
+		    </div>
+	</div>
+			<!-- End Search -->
+	
+		<!-- Cart -->
+		
+		<!-- End Cart -->
+		
+    <div class="main_content" style="right: 90px">
+    
+		<div class="menu">
+                    <ul style="right: -72px">
+                    <%--<li><a class="current" href="index.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>--%>
+                    <li><a href="list.html">Master<!--[if IE 7]><!--></a><!--<![endif]-->
+                    <!--[if lte IE 6]><table><tr><td><![endif]-->
+                        <ul>
+                    <li><a href="">CategoryMaster</a></li>
+                    <li><a href="">SubcategoryMaster</a></li>
+                    <li><a href="">CosubcategoryMaster</a></li>
+                    <li><a href="">SizeMaster</a></li>
+                    <li><a href="">ColourMaster</a></li>
+                    <li><a href="">FabricMaster</a></li>
+                    <li><a href="">ProductMaster</a></li>
+                    <li><a href="">SupplierMaster</a></li>
+                    <li><a href="">CityMaster</a></li>
+                    <li><a href="">StateMaster</a></li>
+                    <li><a href="">ExpensecategoryMaster</a></li>
+                    <li><a href="">ExpenseMaster</a></li>
+                    </ul>
+                    <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                    </li>
+                    <li><a href="login.html">Manage Users<!--[if IE 7]><!--></a><!--<![endif]-->
+                    <!--[if lte IE 6]><table><tr><td><![endif]-->
+                        <ul>
+                        <li><a href="" title="">Manage Order</a></li>
+                        <li><a href="" title="">Manage Feedback</a></li>
+                        <li><a href="" title="">Manage ComplainMaster</a></li>
+                        <li><a class="sub1" href="" title="">sublevel2<!--[if IE 7]><!--></a><!--<![endif]-->
+                        <!--[if lte IE 6]><table><tr><td><![endif]-->
+                            <ul>
+                                <li><a href="" title="">sublevel link</a></li>
+                                <li><a href="" title="">sulevel link</a></li>
+                                <li><a class="sub2" href="#nogo">sublevel3<!--[if IE 7]><!--></a><!--<![endif]-->
+                        
+                                <!--[if lte IE 6]><table><tr><td><![endif]-->
+                                    <ul>
+                                        <li><a href="#nogo">Third level-1</a></li>
+                                        <li><a href="#nogo">Third level-2</a></li>
+                                        <li><a href="#nogo">Third level-3</a></li>
+                                        <li><a href="#nogo">Third level-4</a></li>
+                                    </ul>
+                        
+                                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                                </li>
+                                <li><a href="" title="">sulevel link</a></li>
+                            </ul>
+                        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                        </li>
+                    
+                         <li><a href="" title="">Lorem ipsum dolor sit amet</a></li>
+                        </ul>
+                    <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                    </li>
+                    <li><a href="login.html">Report<!--[if IE 7]><!--></a><!--<![endif]-->
+                    <!--[if lte IE 6]><table><tr><td><![endif]-->
+                        <ul>
+                        <li><a href="" title="">Product Report</a></li>
+                        <li><a href="" title="">Stock Report</a></li>
+                        <li><a href="" title="">Customer Report</a></li>
+                        <li><a href="" title="">Expence Report</a></li>
+                        <li><a class="sub1" href="" title="">sublevel2<!--[if IE 7]><!--></a><!--<![endif]-->
+                        <!--[if lte IE 6]><table><tr><td><![endif]-->
+                            <ul>
+                                <li><a href="" title="">sublevel link</a></li>
+                                <li><a href="" title="">sulevel link</a></li>
+                                <li><a class="sub2" href="#nogo">sublevel3<!--[if IE 7]><!--></a><!--<![endif]-->
+                        
+                                <!--[if lte IE 6]><table><tr><td><![endif]-->
+                                    <ul>
+                                        <li><a href="#nogo">Third level-1</a></li>
+                                        <li><a href="#nogo">Third level-2</a></li>
+                                        <li><a href="#nogo">Third level-3</a></li>
+                                        <li><a href="#nogo">Third level-4</a></li>
+                                    </ul>
+                        
+                                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                                </li>
+                                <li><a href="" title="">sulevel link</a></li>
+                            </ul>
+                        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                        </li>
+                    
+                         <li><a href="" title="">Lorem ipsum dolor sit amet</a></li>
+                        </ul>
+                    <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                    </li>
+                    <li><a href="login.html">Utility<!--[if IE 7]><!--></a><!--<![endif]-->
+                    <!--[if lte IE 6]><table><tr><td><![endif]-->
+                        <ul>
+                        <li><a href="" title="">Create Admin</a></li>
+                        <li><a href="" title="">Change password</a></li>
+                        <li><a href="" title="">Lorem ipsum dolor sit amet</a></li>
+                        <li><a class="sub1" href="" title="">sublevel2<!--[if IE 7]><!--></a><!--<![endif]-->
+                        <!--[if lte IE 6]><table><tr><td><![endif]-->
+                            <ul>
+                                <li><a href="" title="">sublevel link</a></li>
+                                <li><a href="" title="">sulevel link</a></li>
+                                <li><a class="sub2" href="#nogo">sublevel3<!--[if IE 7]><!--></a><!--<![endif]-->
+                        
+                                <!--[if lte IE 6]><table><tr><td><![endif]-->
+                                    <ul>
+                                        <li><a href="#nogo">Third level-1</a></li>
+                                        <li><a href="#nogo">Third level-2</a></li>
+                                        <li><a href="#nogo">Third level-3</a></li>
+                                        <li><a href="#nogo">Third level-4</a></li>
+                                    </ul>
+                        
+                                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                                </li>
+                                <li><a href="" title="">sulevel link</a></li>
+                            </ul>
+                        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                        </li>
+                    
+                         <li><a href="" title="">Lorem ipsum dolor sit amet</a></li>
+                        </ul>
+                    <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                    </li>
+                    <%--<li><a href="">Templates</a></li>
+                    <li><a href="">Custom details</a></li>
+                    <li><a href="">Contact</a></li>--%>
+                    </ul>
+                    </div> 
+    </div>
+		<%--<div id="navigation" style="background-color: #000000; width: 961px; height: 46px;">
+			<%--<ul style="font-size: medium; height: 43px;"> 			    
+               <li>
+               <%--<a href="#"style="padding: inherit; margin: inherit; background-color: #000000; width: 140px; color: #FFFFFF; height: 45px;">Women</a>--%>
+                
+               
+              <%-- <li><a href="#"style="background-color: #000000; height: 43px;">Men</a></li>
+			    <li><a href="#" style="background-color: #000000; height: 47px;">Girls</a></li>
+			    <li><a href="#" style="background-color: #000000; height: 46px;">Boys</a></li>
+                
+			</ul></div>--%>
+		
+	<!-- End Header -->
+	
+	
+	        <asp:Image runat="server" ID="Image" ImageUrl="~/css/images/new1.jpg"  
+            BorderStyle="Solid" BorderColor="Black"
+                Height="299px" Width="949px" />
+        
+        <div >
+	            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+	            
+                 </asp:ContentPlaceHolder>
+       </div>
+	
+	<div class="cl">&nbsp;</div>
+	
+	<div class="side-full">
+		
+		<!-- More Products --><br />
+		<div class="more-products" style="background-color: #FFFFFF">
+			<div class="more-products-holder">
+			<ul>
+			     <li><a href="#"><asp:ImageButton ID="Image11" runat="server" Width="75" Height="95" /></a></li>
+                 <li><a href="#"><asp:ImageButton ID="Image12" runat="server" Width="75" Height="95"/></a></li>
+                 <li><a href="#"><asp:ImageButton ID="Image13" runat="server" Width="75" Height="95"/></a></li>
+                 <li><a href="#"><asp:ImageButton ID="Image14" runat="server" Width="75" Height="95"/></a></li>
+                 <li><a href="#"><asp:ImageButton ID="Image15" runat="server" Width="75" Height="95"/></a></li>
+                 <li><a href="#"><asp:ImageButton ID="Image16" runat="server" Width="75" Height="95" /></a></li>
+                 <li><a href="#"><asp:ImageButton ID="Image17" runat="server" Width="75" Height="95"/></a></li>
+                 <li><a href="#"><asp:ImageButton ID="Image18" runat="server" Width="75" Height="95" /></a></li>
+                 <li><a href="#"><asp:ImageButton ID="Image19" runat="server" Width="75" Height="95"/></a></li>
+                 <li><a href="#"><asp:ImageButton ID="Image20" runat="server" Width="75" Height="95"/></a></li>
+			</ul>
+			</div>
+			<div class="more-nav">
+				<a href="#" class="prev" style="background-color: #FFFFFF">previous</a>
+				<a href="#" class="next">next</a>
+			</div>
+		</div>
+	
+	<div id="footer">
+        
+        <p class="right">
+            &copy; Copyright 2013. All Right Reserved by PATELfashions.<a href="http://Patelfashion.com" target="_blank"
+                title="The Sweetest CSS Templates WorldWide"></a></p>
+        <p class="left" style="bottom: -110px; padding-bottom: -65px; height: 830px;">
+            <a href="#">Home</a> <span>|</span> <a href="#"> About Us </a> <span>|</span> <a
+                href="#">Contact</a> <span>|</span> <a href="#">Feedback</a>
+                <span>|</span> <a href="#">Complain</a>
+        </p>
+    </div>
+		
+	</div>
+			
+    </form>
+</body>
+</html>
