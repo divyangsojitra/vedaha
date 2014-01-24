@@ -65,11 +65,11 @@ ddaccordion.init({
     <div id="clock_a"></div>
     </div>
     
-    <div class="main_content" style="right: 90px">
+    <div class="main_content" style="right: 90px; min-height: 500px;">
     
                     <div class="menu">
                     <ul style="right: -72px">
-                    <li><a class="current" href="index.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    
                     <li><a href="list.html">Master<!--[if IE 7]><!--></a><!--<![endif]-->
                     <!--[if lte IE 6]><table><tr><td><![endif]-->
                         <ul>

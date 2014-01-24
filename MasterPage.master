@@ -54,7 +54,7 @@ ddaccordion.init({
 <body>
     <form id="form1" runat="server">
     <div class="shell" 
-        style="background-color: #FFFFFF; height: 3788px; width: 921px; margin-right: 0px;">
+        style="background-color: #FFFFFF; height: 3788px; width: 1170px; margin:30px auto;">
     <!-- Search -->
 			
 	<div id="header" 
@@ -220,7 +220,7 @@ ddaccordion.init({
 	
 	        <asp:Image runat="server" ID="Image" ImageUrl="~/css/images/new1.jpg"  
             BorderStyle="Solid" BorderColor="Black"
-                Height="299px" Width="949px" />
+                Width="1170px" />
         
         <div >
 	            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

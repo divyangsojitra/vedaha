@@ -15,15 +15,15 @@
    
 <asp:textbox id="TextBox1" runat="server"  Width = "150px" />
 <br />
-<div id="preview" style="width:70px;height:70px;border:1px solid #000;margin:0 3px;float:left">
+<div id="preview" style="width:70px;height:70px;border:1px solid #000;margin:8px 3px;float:left">
 </div>
-<asp:Button ID="Button1" runat="server" Text="Choose Color" 
+<asp:Button ID="Button1" CssClass="choose_color" runat="server" Text="Choose Color" 
         onclick="Button1_Click" />
 
     <asp:ColorPickerExtender ID="ColorPickerExtender1" runat="server" targetcontrolid="TextBox1"
      samplecontrolid="preview" 
      popupbuttonid="Button1" 
-     PopupPosition ="Right"    OnClientColorSelectionChanged = "Color_Changed">
+     PopupPosition ="Right" OnClientColorSelectionChanged = "Color_Changed">
     </asp:ColorPickerExtender>
 
  <script type  "text/javascript">

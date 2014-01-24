@@ -19,6 +19,6 @@ public class Common
 	{       
 	}
 
-    public const string C_ConnectionString = @"Data Source=ABC\SQLEXPRESS;Initial Catalog=shopping;Persist Security Info=True;User ID=sa;Password=123456";
+    public const string C_ConnectionString = @"Data Source=ketan\server2008;Initial Catalog=onlineshop;Persist Security Info=True;User ID=sa;Password=123";
 }
 

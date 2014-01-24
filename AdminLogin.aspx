@@ -133,7 +133,7 @@
        <tr>
             <td><asp:Button runat="server" ID="ButCreatemyaccount"         
                     Text="Create my account" CommandName="ButCreatemyaccount"
-                    onclick="ButCreatemyaccount_Click" Font-Bold="True"  />
+                    onclick="ButCreatemyaccount_Click" CssClass="mb10px" Font-Bold="True" />
             <asp:Button runat="server" ID="ButCancel" Text="Cancel" onclick="ButCancel_Click" 
                     CommandName="ButCancel" Font-Bold="True" /></td>
        </tr>  

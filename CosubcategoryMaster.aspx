@@ -3,8 +3,8 @@
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="con1">
     <div>
     <asp:Label runat="server" ID="Lblmsg" Text=""></asp:Label>
-    <asp:Label runat="server" ID="Lblcat" Text="CosubcategoryMaster" Font-Bold="True" 
-            Font-Names="Arial Black"></asp:Label><br />
+    <asp:Label runat="server" ID="Lblcat" Text="CosubcategoryMaster"  Font-Bold="True" CssClass="cosubcategory_master"  
+            Font-Names="Arial Black" ></asp:Label><br />
 <table>
     <tr>
         <td><asp:Label runat="server" ID="LblCosubcategory" Text="CoSubCategoryId" 

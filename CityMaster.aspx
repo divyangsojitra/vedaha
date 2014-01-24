@@ -30,9 +30,9 @@
             </td>
         </tr>
      </table>
-    <asp:Button runat="server" ID="ButAdd" CommandName="ButAdd" Text="Add" 
+    <asp:Button runat="server" ID="ButAdd" CommandName="ButAdd" CssClass="add" Text="Add" 
             onclick="ButAdd_Click" Font-Bold="True" Font-Italic="False" />
-        <asp:GridView runat="server" ID="gvcity" DataKeyNames="CityId" AutoGenerateColumns="false" 
+        <asp:GridView runat="server" ID="gvcity" CssClass="width" DataKeyNames="CityId" AutoGenerateColumns="false" 
                 AllowPaging="true" AllowSorting="true" 
             onrowediting="gvcity_RowEditing" onrowdeleting="gvcity_RowDeleting" >
             <RowStyle BackColor="LightCyan"  Font-Bold="true" ForeColor="Black"   />
@@ -45,7 +45,7 @@
                 <asp:BoundField DataField="StateId" HeaderText="State" />
                 <asp:TemplateField>
                     <ItemTemplate>
-                        <asp:Button runat="server" ID="ButEdit" CommandName="Edit" Text="Edit" />
+                        <asp:Button runat="server" ID="ButEdit" CssClass="butedit" CommandName="Edit" Text="Edit" />
                         <asp:Button runat="server" ID="ButDelete" CommandName="Delete" Text="Delete" />
                     </ItemTemplate>
                 </asp:TemplateField>

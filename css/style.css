@@ -7,7 +7,7 @@ body {
 	color:#636363;
 }
 input, textarea, select { font-family: "Trebuchet MS", Arial Black, sans-serif; font-size:12px;
-    height: 28px;
+    height: 28px;margin-bottom: 10px;
 }
 
 .field { background:#ebebeb; border:solid 1px #dedede; padding:2px;}
@@ -15,7 +15,7 @@ input, textarea, select { font-family: "Trebuchet MS", Arial Black, sans-serif; 
 a img { border:0; }
 
 a { color:#8b0000; text-decoration: underline; cursor:pointer;
-	width: 250px;
+	
 }
 a:hover { color:#666; text-decoration: none; }
 
@@ -127,7 +127,7 @@ a.bul { background:url(images/bul.gif) no-repeat 0 center; padding-left:10px;}
 
 .more-nav { font-size:0; line-height:0;}
 .more-nav a{ position:absolute; top:30px; left:0; width:50px; height:60px; text-indent: -4000px; z-index:3;}
-.more-nav a.next{ background:url(images/next.png) no-repeat; left:910px;}
+.more-nav a.next{ background:url(images/next.png) no-repeat; left:1110px;}
 .more-nav a.prev{ background:url(images/prev.png) no-repeat; left:20px;}
 
 .cols { padding:15px 0;}
@@ -173,3 +173,12 @@ h3.ico4 { background-image:url(images/ico4.gif);}
     .blue.button:hover                  { background-color: #2575cf; }
     .yellow.button, .yellow.button:visited  { background-color: #ffb515; }
     .yellow.button:hover                { background-color: #fc9200; }
+
+
+
+
+
+#ctl00_ContentPlaceHolder1_Txtaboutus{padding:15px;}
+#cart > span:hover, .cart-link:hover{color:#41B2DC;}
+.ComplianId{margin: 10px 0; width: 1170px;text-align: center;}
+.replay_email {  margin-top: 9px;}

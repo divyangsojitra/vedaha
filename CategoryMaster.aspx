@@ -11,7 +11,7 @@
  <div> 
  
         <asp:Label runat="server" ID="lblmsgbox"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Label runat="server" ID="Lblcat" Text="CategoryMaster" Font-Bold="True" 
+        <asp:Label runat="server" ID="Lblcat"  CssClass="font-size" Text="CategoryMaster" Font-Bold="True" 
             Font-Names="Arial Black"></asp:Label><br />
 <table runat="server" id="TblAddEdit" visible="false">
 <tr>
@@ -74,10 +74,10 @@
         &nbsp;</td>
  </tr>
 </table> 
-    <asp:Button runat="server" ID="ButAdd" Text="Add" onclick="ButAdd_Click" 
+    <asp:Button runat="server" ID="ButAdd" CssClass="add" Text="Add" onclick="ButAdd_Click" 
             CausesValidation="false"/>
     </div> 
-    <asp:GridView ID="gvCategorylist" runat="server" AutoGenerateColumns="false" DataKeyNames="CategoryId" 
+    <asp:GridView ID="gvCategorylist" CssClass="width" runat="server" AutoGenerateColumns="false" DataKeyNames="CategoryId" 
         onrowediting="gvCategorylist_RowEditing" 
         onrowdeleting="gvCategorylist_RowDeleting" 
             onselectedindexchanged="gvCategorylist_SelectedIndexChanged3">
@@ -90,7 +90,7 @@
             <asp:BoundField DataField="Status" HeaderText="Status" />
         <asp:TemplateField>
             <ItemTemplate>
-                <asp:ImageButton runat="server" ID="ButEdit" ImageUrl="~/images/user_edit.png" CommandName="Edit"  CausesValidation="false" />                
+                <asp:ImageButton runat="server"  ID="ButEdit" ImageUrl="~/images/user_edit.png" CommandName="Edit"  CausesValidation="false" />                
                 <asp:ImageButton runat="server" ID="ButDelete" ImageUrl="~/images/user_logout.png" CommandName="Delete" CausesValidation="false"/>
             </ItemTemplate>
         </asp:TemplateField>

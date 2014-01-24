@@ -53,7 +53,7 @@
     </tr>
     <tr>
         <td>
-            <asp:Button runat="server" ID="ButSubmit" Text="Submit" Font-Bold="True" />
+            <asp:Button runat="server" ID="ButSubmit" CssClass="submit" Text="Submit" Font-Bold="True" />
         </td>
     </tr>
 </table>

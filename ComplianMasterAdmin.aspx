@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="ComplianMasterAdmin.aspx.cs" Inherits="ComplianMasterAdmin" Title="Untitled Page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<asp:GridView runat="server" ID="GvComplianList" AutoGenerateColumns="false">
+<asp:GridView runat="server" ID="GvComplianList" AutoGenerateColumns="false" CssClass="ComplianId">
     <Columns>
         <asp:BoundField HeaderText="ComplianId" DataField="ComplianId" />
         <asp:BoundField HeaderText="EmailId" DataField="EmailId" />
@@ -10,7 +10,7 @@
         <asp:BoundField HeaderText="Comment" DataField="Comment" />
         <asp:TemplateField>
             <ItemTemplate>
-                <asp:Button runat="server" CommandName="Replay"  ID="Replay" Text="Replay via Email" />
+                <asp:Button runat="server" CommandName="Replay" CssClass="replay_email" ID="Replay" Text="Replay via Email" />
             </ItemTemplate>
         </asp:TemplateField>
     </Columns>
